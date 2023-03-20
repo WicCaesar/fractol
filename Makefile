@@ -41,7 +41,7 @@ LIBRARYDOTA	= $(foreach lib,$(LIBRARYLIST),$(LIBRARYPATH)$(lib)/$(lib).a)
 LIBRARYPATH	= ./
 LIBRARYLIST	= libft $(MINILIBX)
 
-COMPILE	= cc
+COMPILE	= gcc
 FLAGS	= -Wall -Wextra -Werror -g -I $(INCLUDEPATH)
 REMOVE	= rm -f
 
@@ -96,7 +96,7 @@ bonus:	$(NAMEBONUS)
 
 $(NAMEBONUS):	$(OBJECTSBONUS)
 	$(foreach lib, $(LIBRARY), make -C $(lib) ;)
-	$(COMPILE) $(FLAGS) $(OBJECTSBONUS) $(LIBRARYDOTA) -o $(NAMEBONUS) $(MLXFLAGS) -lm
+	$(COMPILE) $(FLAGS) $(OBJECTSBONUS) $(LIBRARYDOTA) -o $(NAMEBONUS) $(MLXFLAGS) -lm -Ofast
 
 run:	$(NAME)
 	./$(NAME) mandelbrot

@@ -6,7 +6,7 @@
 /*   By: cnascime <cnascime@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/16 03:09:31 by cnascime          #+#    #+#             */
-/*   Updated: 2023/03/20 16:56:28 by cnascime         ###   ########.fr       */
+/*   Updated: 2023/03/20 17:11:10 by cnascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,7 +71,7 @@ int	buttonpress(int pressed, int x, int y, t_setup *ol)
 	}
 	else if (pressed == LEFTBUTTON)
 		palette(ol);
-	else if (pressed == RIGHTBUTTON)
+	else if (pressed == LSD)
 		ol->g = ol->g * 3;
 	render(ol);
 	return (0);

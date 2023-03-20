@@ -6,7 +6,7 @@
 /*   By: cnascime <cnascime@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/15 07:58:06 by cnascime          #+#    #+#             */
-/*   Updated: 2023/03/20 13:22:19 by cnascime         ###   ########.fr       */
+/*   Updated: 2023/03/20 18:06:24 by cnascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,7 @@ int	main(int argc, char **argv)
 	char	*type;
 
 	type = argv[argc - 1];
-	if (argc == 2 || ft_strcmp(type, "mandelbrot") == 0
-		|| ft_strcmp(type, "julia1") == 0 || ft_strcmp(type, "julia2") == 0
-		|| ft_strcmp(type, "julia3") == 0 || ft_strcmp(type, "julia4") == 0
-		|| ft_strcmp(type, "julia5") == 0 || ft_strcmp(type, "tricorn") == 0
-		|| ft_strcmp(type, "burningship") == 0)
+	if (argc == 2)
 	{
 		ft_strtolower(type);
 		ol.type = type;

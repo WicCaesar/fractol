@@ -6,7 +6,7 @@
 /*   By: cnascime <cnascime@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/15 08:01:01 by cnascime          #+#    #+#             */
-/*   Updated: 2023/03/20 16:37:51 by cnascime         ###   ########.fr       */
+/*   Updated: 2023/03/20 17:10:45 by cnascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@
 # include <math.h>
 
 # define WINDOWNAME "fract'ol"
-# define WINDOWWIDTH (1000)
-# define WINDOWHEIGHT (1000)
-# define MAXITERATIONS (400)
+# define WINDOWWIDTH (800)
+# define WINDOWHEIGHT (800)
+# define MAXITERATIONS (200)
 
 # define LEFTBUTTON (1)
 # define SCROLLUP (4)
@@ -27,7 +27,7 @@
 
 # if __APPLE__
 #  include "libmlx/mlx.h"
-#  define RIGHTBUTTON (2)
+#  define LSD (2)
 #  define MIDDLEBUTTON (3)
 #  define CLOSE (17)
 #  define ESC (53)
@@ -38,7 +38,7 @@
 # elif __unix__
 #  include "libmlx_Linux/mlx.h"
 #  define MIDDLEBUTTON (2)
-#  define RIGHTBUTTON (3)
+#  define LSD (3)
 #  define CLOSE (33)
 #  define ESC (65307)
 #  define LEFTARROW (65361)
