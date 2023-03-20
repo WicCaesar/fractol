@@ -6,7 +6,7 @@
 /*   By: cnascime <cnascime@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/16 07:34:46 by cnascime          #+#    #+#             */
-/*   Updated: 2023/03/20 13:22:08 by cnascime         ###   ########.fr       */
+/*   Updated: 2023/03/20 16:48:50 by cnascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,9 @@ void	paintbucket(t_setup *ol, double r, double g, double b)
 }
 
 // Passes the colour values for the paintbucket.
+// 0 = Smooth Matrix	1 = Hard candy		2 = Voltaic tears
+// 3 = Firefly			4 = Toxic bee		5 = Beto Jamaica
+// 6 = Ketchup Mustard	7 = Frosti
 void	palette(t_setup *ol)
 {
 	if (ol->palette == 0)

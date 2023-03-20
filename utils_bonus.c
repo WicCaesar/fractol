@@ -6,7 +6,7 @@
 /*   By: cnascime <cnascime@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/16 03:09:31 by cnascime          #+#    #+#             */
-/*   Updated: 2023/03/20 13:27:14 by cnascime         ###   ########.fr       */
+/*   Updated: 2023/03/20 16:33:30 by cnascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,8 +71,6 @@ int	buttonpress(int pressed, int x, int y, t_setup *ol)
 	}
 	else if (pressed == LEFTBUTTON)
 		palette(ol);
-	else if (pressed == MIDDLEBUTTON)
-		main(1, &ol->type);
 	else if (pressed == RIGHTBUTTON)
 		ol->g = ol->g * 3;
 	render(ol);
@@ -80,6 +78,7 @@ int	buttonpress(int pressed, int x, int y, t_setup *ol)
 }
 // ? Is there any way (in the minilibx) to keep changing colours (multiplying)
 // ? WHILE the right button is pressed?
+// ? In MacOS, it creates a new window instead of resetting.
 
 // Destroys the image, the window and frees the connector.
 int	eject(t_setup *ol)

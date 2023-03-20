@@ -6,7 +6,7 @@
 /*   By: cnascime <cnascime@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/15 08:01:01 by cnascime          #+#    #+#             */
-/*   Updated: 2023/03/20 13:07:30 by cnascime         ###   ########.fr       */
+/*   Updated: 2023/03/20 16:30:49 by cnascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,6 @@
 # define WINDOWHEIGHT (700)
 # define MAXITERATIONS (255)
 
-# define LEFTBUTTON (1)
-# define MIDDLEBUTTON (2)
-# define RIGHTBUTTON (3)
 # define SCROLLUP (4)
 # define SCROLLDOWN (5)
 
